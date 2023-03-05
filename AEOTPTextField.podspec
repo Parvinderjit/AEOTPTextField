@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
      spec.source           = { :git => 'https://github.com/AbdelrhmanKamalEliwa/AEOTPTextField', :tag => spec.version.to_s }
 
 
-     spec.ios.deployment_target = '10.1'
+     spec.ios.deployment_target = '11.0'
 
      spec.source_files  = "AEOTPTextField/Source/**/*.{h,m,swift}"
 
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
      spec.requires_arc = true
 
      spec.platforms = {
-         "ios": "12.1"
+         "ios": "11.0"
      }
 
 end

@@ -93,7 +93,9 @@ private extension AEOTPTextField {
         tintColor = .clear
         textColor = .clear
         keyboardType = .numberPad
-        textContentType = .oneTimeCode
+        if #available(iOS 12.0, *) {
+            textContentType = .oneTimeCode
+        }
         borderStyle = .none
         addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         delegate = implementation
