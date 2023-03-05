@@ -45,6 +45,8 @@ public class AEOTPTextField: UITextField {
         return recognizer
     }()
     
+    public var interitemSpace: CGFloat = 8
+    
     // MARK: - METHODS
     //
     /// This func is used to configure the `AEOTPTextField`, Usually you need to call this method into `viewDidLoad()`
@@ -108,7 +110,7 @@ private extension AEOTPTextField {
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 8
+        stackView.spacing = interitemSpace
         for _ in 1 ... count {
             let label = createLabel()
             stackView.addArrangedSubview(label)
